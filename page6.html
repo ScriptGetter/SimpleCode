@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 6 - Forms</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="chapter-header">
+    <div class="container">
+      <h1>Chapter 6 — Forms</h1>
+      <nav class="mini-nav"><a href="index.html">Home</a> • <a href="page7.html">Next</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 6.1 -->
+    <section class="lesson">
+      <h2>6.1 — Simple form</h2>
+      <p>Basic form with text input and submit button.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<form onsubmit="alert('submitted');return false;">
+  <label>Name: <input type="text" name="name"></label>
+  <button type="submit">Submit</button>
+</form>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 6.2 -->
+    <section class="lesson">
+      <h2>6.2 — Different inputs</h2>
+      <p>Text, password, email, number, range.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<form onsubmit="return false;">
+  <input type="text" placeholder="Text"><br>
+  <input type="password" placeholder="Password"><br>
+  <input type="email" placeholder="Email"><br>
+  <input type="number" value="5" min="1" max="10"><br>
+  <input type="range" min="0" max="100"><br>
+</form>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 6.3 -->
+    <section class="lesson">
+      <h2>6.3 — Checkboxes & radios</h2>
+      <p>Select options with checkboxes and radios.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<form onsubmit="return false;">
+  <label><input type="checkbox"> I agree</label><br>
+  <label><input type="radio" name="r"> Option A</label>
+  <label><input type="radio" name="r"> Option B</label>
+</form>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 6.4 -->
+    <section class="lesson">
+      <h2>6.4 — Select & textarea</h2>
+      <p>Dropdown and multi-line text area.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<form onsubmit="return false;">
+  <select>
+    <option>Red</option><option>Green</option><option>Blue</option>
+  </select><br>
+  <textarea rows="4" cols="30">Write your message...</textarea>
+</form>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 6.5 -->
+    <section class="lesson">
+      <h2>6.5 — File input & labels</h2>
+      <p>Uploading files and properly labeling inputs.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<form onsubmit="return false;">
+  <label for="photo">Upload photo:</label>
+  <input type="file" id="photo" name="photo"><br>
+  <label for="agree"><input id="agree" type="checkbox"> I accept</label>
+</form>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container small-footer">
+    <nav class="nav-links"><a href="page5.html">⬅ Prev</a> <a href="page7.html">Next ➡</a></nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

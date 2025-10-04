@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 1 - Basics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="chapter-header">
+    <div class="container">
+      <h1>Chapter 1 — Basics</h1>
+      <nav class="mini-nav"><a href="index.html">Home</a> • <a href="page2.html">Next</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Lesson 1.1 -->
+    <section class="lesson">
+      <h2>Lesson 1.1 — Document Skeleton</h2>
+      <p>Basic HTML structure with <code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My First Page</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>Welcome to HTML.</p>
+  </body>
+</html>
+        </textarea>
+        <div class="controls">
+          <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+        </div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- Lesson 1.2 -->
+    <section class="lesson">
+      <h2>Lesson 1.2 — Headings</h2>
+      <p>Headings from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<h1>Heading 1 (h1)</h1>
+<h2>Heading 2 (h2)</h2>
+<h3>Heading 3 (h3)</h3>
+<h4>Heading 4 (h4)</h4>
+<h5>Heading 5 (h5)</h5>
+<h6>Heading 6 (h6)</h6>
+        </textarea>
+        <div class="controls">
+          <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+        </div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- Lesson 1.3 -->
+    <section class="lesson">
+      <h2>Lesson 1.3 — Paragraphs & inline tags</h2>
+      <p>Paragraphs and inline text formatting.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<p>This is a paragraph. <strong>Strong</strong>, <em>emphasized</em>, <u>underlined</u>, <small>small text</small>.</p>
+<p>Use <code>&lt;br&gt;</code> for a line break.<br>Next line after break.</p>
+        </textarea>
+        <div class="controls">
+          <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+        </div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- Lesson 1.4 -->
+    <section class="lesson">
+      <h2>Lesson 1.4 — Comments & entities</h2>
+      <p>HTML comments and text entities.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<!-- This is a comment and won't show in the browser -->
+<p>Less than &lt; and greater than &gt; and ampersand &amp;</p>
+        </textarea>
+        <div class="controls">
+          <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+        </div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- Lesson 1.5 -->
+    <section class="lesson">
+      <h2>Lesson 1.5 — Entities & special chars</h2>
+      <p>Display quotes, currency and symbols with entities.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<p>Quotes: &quot;Hello&quot; — © 2025 — £ &yen; &euro;</p>
+<p>Non-breaking space: A&nbsp;B (prevents line break)</p>
+        </textarea>
+        <div class="controls">
+          <button class="run-btn" onclick="runCode(this)">▶ Run</button>
+        </div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container small-footer">
+    <nav class="nav-links"><a href="index.html">Home</a> <a href="page2.html">Next ➡</a></nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* Shared layout & styles */
+:root{
+  --accent:#2d89ef;
+  --bg:#f4f6f9;
+  --card:#fff;
+  --code-bg:#1e1e1e;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  margin:0;
+  background:var(--bg);
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:1000px;margin:0 auto;padding:18px}
+.site-header{background:linear-gradient(90deg,var(--accent),#6a5cff);color:white;padding:28px 0;text-align:center}
+.site-header p{margin:6px 0 0;opacity:.95}
+.chapter-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+.chapter-card{display:block;background:var(--card);padding:18px;border-radius:10px;text-align:center;text-decoration:none;color:var(--accent);box-shadow:0 6px 18px rgba(20,30,60,.06);font-weight:600}
+.chapter-card:hover{transform:translateY(-6px);transition:all .18s}
+.lesson{background:var(--card);padding:16px;border-radius:10px;margin:14px 0;box-shadow:0 6px 18px rgba(20,30,60,.04)}
+.lesson h2{margin:0 0 8px;color:var(--accent)}
+.mini-nav{margin-top:6px;font-size:14px}
+.mini-nav a{color:inherit;text-decoration:none;opacity:.95}
+.code-box{margin-top:10px;background:transparent}
+.code-input{width:100%;height:180px;padding:12px;border-radius:8px;background:var(--code-bg);color:#d3ffd8;border:none;font-family:Consolas,monaco,monospace;font-size:13px;resize:vertical}
+.controls{margin-top:8px}
+.run-btn{background:var(--accent);color:white;border:none;padding:8px 12px;border-radius:8px;cursor:pointer;box-shadow:0 6px 12px rgba(45,137,239,.15)}
+.run-btn:hover{transform:translateY(-2px)}
+.output{width:100%;height:200px;border-radius:8px;border:1px solid #ddd;margin-top:10px;background:#fff}
+.nav-links{display:flex;justify-content:space-between;padding:12px 0}
+.small-footer{margin-top:18px;padding:10px 0;text-align:center;color:var(--muted)}
+footer a{color:var(--accent);text-decoration:none}
+.lesson p{margin:6px 0 10px;color:var(--muted)}
+pre{white-space:pre-wrap;word-break:break-word}
+@media (max-width:600px){
+  .code-input{height:160px}
+  .output{height:160px}
+}

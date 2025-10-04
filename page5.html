@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 5 - Tables</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="chapter-header">
+    <div class="container">
+      <h1>Chapter 5 — Tables</h1>
+      <nav class="mini-nav"><a href="index.html">Home</a> • <a href="page6.html">Next</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 5.1 -->
+    <section class="lesson">
+      <h2>5.1 — Simple table</h2>
+      <p>Basic <code>&lt;table&gt;</code> with headers and rows.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<table border="1" cellpadding="6">
+  <tr><th>Name</th><th>Age</th></tr>
+  <tr><td>Alice</td><td>24</td></tr>
+  <tr><td>Bob</td><td>30</td></tr>
+</table>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 5.2 -->
+    <section class="lesson">
+      <h2>5.2 — Caption & summary</h2>
+      <p>Adding caption for accessibility.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<table border="1">
+  <caption>Team Stats</caption>
+  <tr><th>Player</th><th>Goals</th></tr>
+  <tr><td>Jane</td><td>10</td></tr>
+</table>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 5.3 -->
+    <section class="lesson">
+      <h2>5.3 — Colspan & rowspan</h2>
+      <p>Merge cells horizontally or vertically.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<table border="1">
+  <tr><th colspan="2">Merged header</th></tr>
+  <tr><td rowspan="2">Rowspan cell</td><td>Cell A</td></tr>
+  <tr><td>Cell B</td></tr>
+</table>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 5.4 -->
+    <section class="lesson">
+      <h2>5.4 — Semantic table tags</h2>
+      <p>Use <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<table border="1">
+  <thead><tr><th>Item</th><th>Price</th></tr></thead>
+  <tbody>
+    <tr><td>Apple</td><td>$1</td></tr>
+    <tr><td>Bread</td><td>$2</td></tr>
+  </tbody>
+  <tfoot><tr><td>Total</td><td>$3</td></tr></tfoot>
+</table>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 5.5 -->
+    <section class="lesson">
+      <h2>5.5 — Accessible table</h2>
+      <p>Use <code>scope</code> attribute on headers for accessibility.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<table border="1">
+  <tr><th scope="col">Name</th><th scope="col">Score</th></tr>
+  <tr><td>A</td><td>95</td></tr>
+</table>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container small-footer">
+    <nav class="nav-links"><a href="page4.html">⬅ Prev</a> <a href="page6.html">Next ➡</a></nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

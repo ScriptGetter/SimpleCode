@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 3 - Links & Images</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="chapter-header">
+    <div class="container">
+      <h1>Chapter 3 — Links & Images</h1>
+      <nav class="mini-nav"><a href="index.html">Home</a> • <a href="page4.html">Next</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 3.1 -->
+    <section class="lesson">
+      <h2>3.1 — Anchor links</h2>
+      <p>Basic anchors, <code>target="_blank"</code>, and rel attributes.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<a href="https://example.com" target="_blank" rel="noopener">Open example.com in a new tab</a>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 3.2 -->
+    <section class="lesson">
+      <h2>3.2 — Image basic</h2>
+      <p>Using <code>&lt;img&gt;</code> with alt and width/height.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<img src="https://via.placeholder.com/180" alt="Placeholder" width="180" height="120">
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 3.3 -->
+    <section class="lesson">
+      <h2>3.3 — Image as link & figure</h2>
+      <p>Wrap images with anchors and use <code>&lt;figure&gt;</code>.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<figure>
+  <a href="https://via.placeholder.com/600" target="_blank">
+    <img src="https://via.placeholder.com/240" alt="Larger">
+  </a>
+  <figcaption>Caption for image</figcaption>
+</figure>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 3.4 -->
+    <section class="lesson">
+      <h2>3.4 — Responsive images</h2>
+      <p>Use <code>srcset</code> and <code>sizes</code> for responsive images.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<img
+  src="https://via.placeholder.com/400"
+  srcset="https://via.placeholder.com/400 400w, https://via.placeholder.com/800 800w"
+  sizes="(max-width: 600px) 400px, 800px"
+  alt="Responsive">
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 3.5 -->
+    <section class="lesson">
+      <h2>3.5 — Image lazy loading</h2>
+      <p>Use <code>loading="lazy"</code> to defer offscreen images.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<img src="https://via.placeholder.com/300" alt="Lazy" loading="lazy">
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container small-footer">
+    <nav class="nav-links"><a href="page2.html">⬅ Prev</a> <a href="page4.html">Next ➡</a></nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

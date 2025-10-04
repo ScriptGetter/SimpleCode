@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 2 - Text Elements</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="chapter-header">
+    <div class="container">
+      <h1>Chapter 2 — Text Elements</h1>
+      <nav class="mini-nav"><a href="index.html">Home</a> • <a href="page3.html">Next</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Lesson 2.1 -->
+    <section class="lesson">
+      <h2>2.1 — Block vs Inline</h2>
+      <p>Difference between block-level and inline elements.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<div style="background:#eee;padding:8px">I am a block DIV</div>
+<span style="background:#ffd">I am inline SPAN</span>
+<p>Paragraph below.</p>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- Lesson 2.2 -->
+    <section class="lesson">
+      <h2>2.2 — Preformatted text</h2>
+      <p>Using <code>&lt;pre&gt;</code> for preformatted text.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<pre>
+Line 1
+  Indented line
+Line 3:    spaced
+</pre>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- Lesson 2.3 -->
+    <section class="lesson">
+      <h2>2.3 — Blockquote & cite</h2>
+      <p>Quotations and citations.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<blockquote>
+  This is a long quote excerpted from somewhere.
+  <footer>— <cite>Author Name</cite></footer>
+</blockquote>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- Lesson 2.4 -->
+    <section class="lesson">
+      <h2>2.4 — Abbreviation & mark</h2>
+      <p>Useful small tags: <code>&lt;abbr&gt;</code>, <code>&lt;mark&gt;</code>.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<p><abbr title="World Health Organization">WHO</abbr> is an example.</p>
+<p>Highlight: <mark>Important text</mark></p>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- Lesson 2.5 -->
+    <section class="lesson">
+      <h2>2.5 — Time & progress</h2>
+      <p>Tags: <code>&lt;time&gt;</code>, <code>&lt;progress&gt;</code>.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<p>Time example: <time datetime="2025-10-04">Oct 4, 2025</time></p>
+<p>Progress: <progress value="40" max="100"></progress></p>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container small-footer">
+    <nav class="nav-links"><a href="page1.html">⬅ Prev</a> <a href="page3.html">Next ➡</a></nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

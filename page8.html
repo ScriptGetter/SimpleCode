@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 8 - Semantic HTML</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="chapter-header">
+    <div class="container">
+      <h1>Chapter 8 — Semantic HTML</h1>
+      <nav class="mini-nav"><a href="index.html">Home</a> • <a href="page9.html">Next</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 8.1 -->
+    <section class="lesson">
+      <h2>8.1 — Header & nav</h2>
+      <p>Use <code>&lt;header&gt;</code> and <code>&lt;nav&gt;</code> for top-level content.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<header>
+  <h1>Site Title</h1>
+  <nav><a href="#">Home</a> | <a href="#">About</a></nav>
+</header>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 8.2 -->
+    <section class="lesson">
+      <h2>8.2 — Main & article</h2>
+      <p>Main content container & article blocks.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<main>
+  <article>
+    <h2>Article Title</h2>
+    <p>Article paragraph.</p>
+  </article>
+</main>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 8.3 -->
+    <section class="lesson">
+      <h2>8.3 — Aside & footer</h2>
+      <p>Secondary content and footers.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<aside>
+  <p>Sidebar content</p>
+</aside>
+
+<footer>
+  <p>© 2025</p>
+</footer>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 8.4 -->
+    <section class="lesson">
+      <h2>8.4 — Landmark roles</h2>
+      <p>Use roles for accessibility if needed.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<nav role="navigation">Navigation</nav>
+<main role="main">Primary content</main>
+<footer role="contentinfo">Footer</footer>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 8.5 -->
+    <section class="lesson">
+      <h2>8.5 — Section & header tags</h2>
+      <p>Structure long pages using <code>&lt;section&gt;</code>.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<section>
+  <header><h2>Section Title</h2></header>
+  <p>Content of section</p>
+</section>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container small-footer">
+    <nav class="nav-links"><a href="page7.html">⬅ Prev</a> <a href="page9.html">Next ➡</a></nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

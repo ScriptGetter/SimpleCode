@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 9 - Canvas & SVG</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="chapter-header">
+    <div class="container">
+      <h1>Chapter 9 — Canvas & SVG</h1>
+      <nav class="mini-nav"><a href="index.html">Home</a> • <a href="page10.html">Next</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 9.1 -->
+    <section class="lesson">
+      <h2>9.1 — Basic canvas</h2>
+      <p>Draw rectangles on the canvas using JS (inline script).</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<canvas id="c" width="300" height="120" style="border:1px solid #000"></canvas>
+<script>
+  var c = document.getElementById('c');
+  var ctx = c.getContext('2d');
+  ctx.fillStyle = '#f60';
+  ctx.fillRect(10, 10, 120, 60);
+</script>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 9.2 -->
+    <section class="lesson">
+      <h2>9.2 — Drawing text</h2>
+      <p>Canvas text drawing.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<canvas id="c2" width="300" height="100" style="border:1px solid #000"></canvas>
+<script>
+  var c2 = document.getElementById('c2');
+  var ctx = c2.getContext('2d');
+  ctx.font = '20px Arial';
+  ctx.fillStyle = 'blue';
+  ctx.fillText('Hello Canvas', 10, 50);
+</script>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 9.3 -->
+    <section class="lesson">
+      <h2>9.3 — SVG basics</h2>
+      <p>Create vector graphics with SVG.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<svg width="200" height="100">
+  <rect width="200" height="100" fill="#efe" />
+  <circle cx="50" cy="50" r="30" fill="#f06" />
+  <text x="100" y="55" font-size="14" text-anchor="middle">SVG</text>
+</svg>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 9.4 -->
+    <section class="lesson">
+      <h2>9.4 — SVG with paths</h2>
+      <p>Use <code>&lt;path&gt;</code> to draw complex shapes.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<svg width="200" height="120">
+  <path d="M10 10 H 190 V 110 H 10 Z" fill="none" stroke="black"/>
+  <path d="M20 60 Q 100 10 180 60" fill="none" stroke="#f60"/>
+</svg>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 9.5 -->
+    <section class="lesson">
+      <h2>9.5 — Canvas interactivity (mouse)</h2>
+      <p>Small interactive canvas example — draw where you click.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<canvas id="paint" width="300" height="150" style="border:1px solid #000"></canvas>
+<script>
+  const canvas = document.getElementById('paint');
+  const ctx = canvas.getContext('2d');
+  canvas.addEventListener('click', e => {
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left, y = e.clientY - rect.top;
+    ctx.fillStyle = '#28a';
+    ctx.beginPath();
+    ctx.arc(x,y,6,0,Math.PI*2);
+    ctx.fill();
+  });
+</script>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container small-footer">
+    <nav class="nav-links"><a href="page8.html">⬅ Prev</a> <a href="page10.html">Next ➡</a></nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

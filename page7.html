@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 7 - Multimedia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="chapter-header">
+    <div class="container">
+      <h1>Chapter 7 — Multimedia</h1>
+      <nav class="mini-nav"><a href="index.html">Home</a> • <a href="page8.html">Next</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 7.1 -->
+    <section class="lesson">
+      <h2>7.1 — Audio tag</h2>
+      <p>Embed audio with controls.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<audio controls>
+  <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+  Your browser does not support audio.
+</audio>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 7.2 -->
+    <section class="lesson">
+      <h2>7.2 — Video tag</h2>
+      <p>Embed video with width/height and controls.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<video width="320" height="240" controls>
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  Sorry, your browser doesn't support embedded videos.
+</video>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 7.3 -->
+    <section class="lesson">
+      <h2>7.3 — iframe embed</h2>
+      <p>Embed another page or content via <code>&lt;iframe&gt;</code>.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<iframe src="https://example.com" width="420" height="200" title="Example iframe"></iframe>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 7.4 -->
+    <section class="lesson">
+      <h2>7.4 — Picture element</h2>
+      <p>Use <code>&lt;picture&gt;</code> for art direction and webp fallback.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<picture>
+  <source srcset="https://via.placeholder.com/400" media="(max-width:600px)">
+  <img src="https://via.placeholder.com/800" alt="Example">
+</picture>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+    <!-- 7.5 -->
+    <section class="lesson">
+      <h2>7.5 — Media fallback text</h2>
+      <p>Provide fallback text for unsupported browsers.</p>
+      <div class="code-box">
+        <textarea class="code-input" spellcheck="false">
+<video controls>
+  <source src="nonexist.mp4" type="video/mp4">
+  Sorry, your browser can't play this video.
+</video>
+        </textarea>
+        <div class="controls"><button class="run-btn" onclick="runCode(this)">▶ Run</button></div>
+        <iframe class="output"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container small-footer">
+    <nav class="nav-links"><a href="page6.html">⬅ Prev</a> <a href="page8.html">Next ➡</a></nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
